@@ -7,7 +7,10 @@ import { NavController } from 'ionic-angular';
   styleUrls: ['home.css']
 })
 export class HomePage {
-
+  height: number;
+  weight: number;
+  age: number;
+  bmr: number;
   constructor(public navCtrl: NavController) {
 
   }
