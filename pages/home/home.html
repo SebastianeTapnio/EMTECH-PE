@@ -12,6 +12,14 @@
     Source: <a href="https://www.omnicalculator.com/health/calorie">https://www.omnicalculator.com/health/calorie</a>
   </p>
   <p>
+  <ion-item>
+    <ion-label color="dark"> Gender: </ion-label>
+    <ion-select interface="popover" [(ngModel)]="gender">
+      <ion-option value="m">Male</ion-option>
+      <ion-option value="f">Female</ion-option>
+    </ion-select>
+</ion-item>
+
     <ion-item>
   <ion-label>Height in centimeter: </ion-label>
   <ion-input type="number" [(ngModel)]="height"></ion-input>
