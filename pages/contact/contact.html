@@ -7,11 +7,32 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
+  <p>
+  <ion-item>
+    <ion-label color="dark"> Gender: </ion-label>
+    <ion-select interface="popover" [(ngModel)]="gender">
+      <ion-option value="m">Male</ion-option>
+      <ion-option value="f">Female</ion-option>
+    </ion-select>
+</ion-item>
+
     <ion-item>
-      <ion-icon name="ionic" item-left></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+  <ion-label>Height in centimeter: </ion-label>
+  <ion-input type="number" [(ngModel)]="height"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label>Weight in kilogram: </ion-label>
+  <ion-input type="number" [(ngModel)]="weight"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label>Age: </ion-label>
+  <ion-input type="number" [(ngModel)]="age"></ion-input>
+  </ion-item>
+
+<button ion-button color="secondary" (click)="calculateBMR()">Calculate</button>
+
+  </p>
+
 </ion-content>
